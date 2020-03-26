@@ -9,13 +9,13 @@ import NewIncident from './pages/Newincident';
 export default function Routes() {
     return (
         <BrowserRouter>
-            <switch>
+            <Switch>
                 <Route path="/" exact component={Logon} />
                 <Route path="/register" component={Register} />
 
                 <Route path="/profile" component={Profile} />
                 <Route path="/incidents/new" component={NewIncident} />
-            </switch>
+            </Switch>
         </BrowserRouter>
     );
 }
